@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Nick Carlson
+# DATE: 9/29/2025
+# BRIEF DESCRIPTION: Convert a number grade into a letter grade
 
 
 
@@ -14,24 +14,23 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+print("===== Grade Converter =====")
+score = float(input("Enter a numerical grade (1-100): "))
 
-print('===== Grade Converter =====')
-
-percent = int(input('Enter a numerical grade (1-100): '))
-
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
+if score > 100:
+    grade = 'A+'
+elif score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+elif score >= 65:
+    grade = 'D'
 else:
-    print('F')
+    grade = 'F'
 
+print(grade)
 ########### END YER CODE ABOVE THIS LINE ###########
 
     
@@ -85,7 +84,7 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
-
+Make sure to use the correct comparisons(i.e. > vs >=)
 
 
 
